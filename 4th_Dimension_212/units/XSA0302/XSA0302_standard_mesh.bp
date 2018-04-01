@@ -1,0 +1,20 @@
+MeshBlueprint {
+    IconFadeInZoom = 130,
+    LODs = {
+        {
+            AlbedoName = '/units/XSA0302/xsa0302_albedo.dds',
+            MeshName = '/units/XSA0302/xsa0302_lod0.scm',
+            SpecularName = '/units/XSA0302/xsa0302_specteam.dds',
+            ShaderName = 'Seraphim',
+            LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',           
+            LODCutoff = 130,
+        },
+        {
+            AlbedoName = '/units/XSA0302/xsa0302_lod1_albedo.dds',
+            MeshName = '/units/XSA0302/XSA0302_lod1.scm',            
+            SpecularName = '/units/XSA0302/xsa0302_lod1_specteam.dds',
+            ShaderName = 'Seraphim',            
+            LODCutoff = 215,            
+        },        
+    },
+}        

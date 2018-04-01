@@ -1,0 +1,37 @@
+ProjectileBlueprint
+
+{
+    Merge = true,
+    Source = "/projectiles/SIFLaanseTacticalMissile04/SIFLaanseTacticalMissile04_proj.bp",
+
+    Display = {
+        CameraFollowTimeout = 2,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Scale = 0.75,
+            Type = 'Large01',
+        },
+        Mesh = {
+            LODs = {
+                {
+                    ShaderName = 'TMeshGlow',
+                },
+            },
+        },
+        StrategicIconSize = 2,
+        UniformScale = 0.25,
+    },
+
+    Economy = {
+        BuildCostEnergy = 22500,
+        BuildCostMass = 65,
+        BuildTime = 4800,
+    },
+
+    Physics = {
+
+        TrackTarget = true,
+        TrackTargetGround = false,
+
+    },
+}

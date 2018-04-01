@@ -2379,7 +2379,7 @@ ACUUnit = Class(CommandUnit) {
         end
         ArmyBrains[self:GetArmy()].CommanderKilledBy = (instigator or self):GetArmy()
     end,
-
+	
     ResetRightArm = function(self)
         CommandUnit.ResetRightArm(self)
 

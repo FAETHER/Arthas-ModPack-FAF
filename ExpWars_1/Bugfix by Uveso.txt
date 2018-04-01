@@ -1,0 +1,326 @@
+v1.87 (3652) (28.Dec.2017)
+
+Fixed version check for steam games (uiutil.lua, gamecommon.lua, unitview.lua, AIFQuantumWarhead02_script.lua).
+
+*************************************************************************************************************************************
+
+v1.86 (3652) (02.Jul.2017)
+
+Fixed wrong local "hasHEBIII" on several units
+Unit xsse0001 (Experimental Tech1 Spaceship) Added DeathImpact Weapon for aircrash.
+Unit urse0001 (Experimental Tech1 Spaceship) Added DeathImpact Weapon for aircrash.
+Unit uese0001 (Tech1 Experimental Spaceship) Added DeathImpact Weapon for aircrash.
+Unit uase0001 (Experimental Tech1 Spaceship) Added DeathImpact Weapon for aircrash.
+Unit uea0402 (Transport) Added DeathImpact Weapon for aircrash.
+Unit uea0401 (Spaceships) Added DeathImpact Weapon for aircrash.
+Unit xsse0001 (Experimental Tech1 Spaceship) Changed damageradius in weapon (DeathImpact) from 1 to 6
+Unit urse0001 (Experimental Tech1 Spaceship) Changed damageradius in weapon (DeathImpact) from 1 to 6
+Unit ura0205 (EMP Bomber) Changed damage value in weapon (DeathImpact) from 150 to 93
+Unit xsa0306 (Gunship) Changed damage value in weapon (DeathImpact) from 100 to 400
+Unit uea0306 (Fighter/Bomber) Changed damage value in weapon (DeathImpact) from 50 to 178
+Unit uea0306 (Fighter/Bomber) Changed damageradius in weapon (DeathImpact) from 2 to 1
+Unit uese0001 (Tech1 Experimental Spaceship) Changed damageradius in weapon (DeathImpact) from 1 to 
+Unit uase0001 (Experimental Tech1 Spaceship) Changed damageradius in weapon (DeathImpact) from 1 to 
+Unit ura0110 (Support Bomber) Changed damage value in weapon (DeathImpact) from 100 to 33
+Unit ura0110 (Support Bomber) Changed damageradius in weapon (DeathImpact) from 1 to 3
+Unit uea0402 (Transport) Changed damageradius in weapon (DeathImpact) from 1 to 11
+Unit uea0110 (Support Bomber) Changed damage value in weapon (DeathImpact) from 100 to 18
+Unit uea0401 (Spaceships) Changed damage value in weapon (DeathImpact) from 6577 to 6578
+Unit uea0401 (Spaceships) Changed damageradius in weapon (DeathImpact) from 1 to 11
+
+*************************************************************************************************************************************
+V1.85 (3652) (29.Jun.2016)
+
+Renamed Mod Folder from "SoftLastAsdruMod" to "ExpWars_1"
+
+Changed all Sorian AI scripts.
+
+Updated uiutil.lua, gamecommon.lua, unitview.lua and addded new "MyUnitIdTable".
+
+Moved folder /hook/effects to /effects
+Moved folder /hook/projectiles to /projectiles
+
+Unit url0302,ual0302,xsl0302
+Changed Categories, Classification. Now the AI can buil and use Combat-SubCommander.
+
+Fixed General.SelectionPriority on all units.
+
+Removed BUILTBYTIER4COMMANDER from all unit categories
+
+Unit XSL0405
+Energy being spawns now when reclaimed.
+
+Unit xrl0004 Name: Unknown (Crab Egg (Flak))
+Changed Description = '<LOC xrl0002_desc>Crab Egg (Engineer)' to '<LOC xrl0004_desc>Crab Egg (Flak)'
+Changed (General.Icon = 'amph',) to (General.Icon = 'land',)
+
+Unit uelew0001 Name: SmallBoy (Heavy Mobile Fortress Experimental)
+Changed (General.Icon = 'land',) to (General.Icon = 'amph',)
+
+Unit ual5001 Name: The Renaissance (Mobile Air Staging Platform )
+Changed (General.Icon = 'land',) to (General.Icon = 'amph',)
+
+Unit url0106
+Removed non existent Muzzle: 'Turret_Muzzle01', 'Turret_Muzzle02',
+
+Unit xsse0001 (Experimental Tech1 Spaceship) Fixed Display.Abilities.
+Unit urb5001 (Heavy Stealth Field Generator) Fixed Display.Abilities.
+Unit xsl0310 (Mobile Nuke Laucnher) Fixed Display.Abilities.
+Unit ura0205 (EMP Bomber) Fixed Display.Abilities.
+Unit ual0311 (EMP Missile Launcher) Fixed Display.Abilities.
+Unit xsl0206 (Mobile Anti-Subs Launcher) Fixed Display.Abilities.
+Unit url0206 (Amphibious Heavy Tank) Fixed Display.Abilities.
+Unit url0402 (Experimental Spiderbot) Fixed Display.Abilities.
+Unit uas0301 (Submarine Battleship) Fixed Display.Abilities.
+Unit uese0001 (Tech1 Experimental Spaceship) Fixed Display.Abilities.
+Unit uase0001 (Experimental Tech1 Spaceship) Fixed Display.Abilities.
+Unit uab2310 (Heavy Experimental Defense Installation ) Fixed Display.Abilities.
+Unit ura0110 (Support Bomber) Fixed Display.Abilities.
+Unit uea0402 (Transport) Fixed Display.Abilities.
+Unit uab5201 (Air Staging Facility) Fixed Display.Abilities.
+Unit uelew0001 (Heavy Mobile Fortress Experimental) Fixed Display.Abilities.
+Unit ualew0001 (Hover Tank Experimental tech 1) Fixed Display.Abilities.
+Unit xsl0302 (Support Armored Command Unit) Fixed Display.Abilities.
+Unit url0302 (Assault Armored Command Unit) Fixed Display.Abilities.
+Unit urlew0001 (Heavy Experimentale Missile Launcher Bot) Fixed Display.Abilities.
+Unit xrl0405 (Experimental Megabot) Fixed Display.Abilities.
+Unit uea0110 (Support Bomber) Fixed Display.Abilities.
+Unit uea0401 (Spaceships) Fixed Display.Abilities.
+Unit uel0108 ( Deployable Medium Tank) Fixed Display.Abilities.
+Unit xsbse2001 (Heavy Orbital Defence) Fixed Display.Abilities.
+Unit ual0108 (Mobile Torpedo Launcher) Fixed Display.Abilities.
+Unit xrl0403 (Experimental Megabot) Fixed Display.Abilities.
+Unit urse0001 (Experimental Tech1 Spaceship) Fixed Display.Abilities.
+Unit ual5001 (Mobile Air Staging Platform ) Fixed Display.Abilities.
+Unit xsle0001 (Experimental Assault Bot) Fixed Display.Abilities.
+
+Unit xrl0403 (Experimental Megabot) Added AlbedoName in LOD[0] "AlbedoName = '/units/xrl0403/xrl0403_Albedo.dds',"
+Unit xrl0403 (Experimental Megabot) Added NormalsName in LOD[0] "NormalsName = '/units/xrl0403/xrl0403_NormalsTS.dds',"
+Unit xrl0403 (Experimental Megabot) Added SpecularName in LOD[0] "SpecularName = '/units/xrl0403/xrl0403_SpecTeam.dds',"
+Unit xrl0403 (Experimental Megabot) Changed AlbedoName in LOD[1] from "/mods/expwars_1/units/grillespain/xrl0403/" to "/units/xrl0403/xrl0403_lod1_albedo.dds"
+Unit xrl0403 (Experimental Megabot) Added NormalsName in LOD[1] "NormalsName = '/units/xrl0403/xrl0403_lod1_NormalsTS.dds',"
+Unit xrl0403 (Experimental Megabot) Changed SpecularName in LOD[1] from "/mods/expwars_1/units/grillespain/xrl0403/" to "/units/xrl0403/xrl0403_lod1_specteam.dds"
+
+*************************************************************************************************************************************
+V1.84 (3652) (11.Mar.2016)
+
+Unit ual5001, xsl0310, uea0110, ura0110
+Changed SortCategorie
+
+Changed LODCutoff from all spaceships to 700 (highest layer)
+Changed LODCutoff from all air experimentals to 600
+Changed LODCutoff from all Land experimentals to 500 (same LOD as factories)
+
+Unit XSBSE0001
+Renamed to XSBSE2001 (make it compatible to orbital wars)
+
+Unit URLEW0001
+Removed unused local Weapon = import('/lua/sim/Weapon.lua').Weapon
+Removed unused local MissileRedirect = import('/lua/defaultantiprojectile.lua').MissileRedirect
+
+Unit XSB5201
+Removed unused local SeraphimAirStagePlat02 = import('/lua/EffectTemplates.lua').SeraphimAirStagePlat02
+
+Unit URL0301
+Removed unused local EffectUtil = import('/lua/EffectUtilities.lua')
+Removed unused local Buff = import('/lua/sim/Buff.lua')
+Removed unused local CDFOverchargeWeapon = CWeapons.CDFOverchargeWeapon
+Removed unused local CCannonMolecularWeapon = CWeapons.CCannonMolecularWeapon
+
+Unit XSL0301
+Removed unused local AWeapons = import('/lua/aeonweapons.lua')
+Removed unused local Buff = import('/lua/sim/Buff.lua')
+Removed unused local SDFOverChargeWeapon = SWeapons.SDFLightChronotronCannonOverchargeWeapon
+Removed unused local SIFLaanseTacticalMissileLauncher = SWeapons.SIFLaanseTacticalMissileLauncher
+Removed unused local EffectUtil = import('/lua/EffectUtilities.lua')
+
+Unit UAL0301
+Removed unused local EffectUtil = import('/lua/EffectUtilities.lua')
+Removed unused local Buff = import('/lua/sim/Buff.lua')
+
+Unit URL0402
+Removed unused local Weapon = import('/lua/sim/Weapon.lua').Weapon
+
+Unit URO2001
+Removed unused local util = import('/lua/utilities.lua')
+Removed unused local fxutil = import('/lua/effectutilities.lua')
+
+Unit XSB2306
+Removed unused local SDFUltraChromaticBeamGenerator = import('/lua/seraphimweapons.lua').SDFUltraChromaticBeamGenerator
+
+Unit XSL0401
+Removed unused local utilities = import('/lua/utilities.lua')
+
+Unit UAB2302
+Removed unused local ADFPhasonLaser = WeaponsFile.ADFPhasonLaser
+Removed unused local TMobileFactoryUnit = import('/lua/terranunits.lua').TMobileFactoryUnit
+
+Unit XSO1104
+Removed unused local SWeapon = import('/lua/seraphimweapons.lua')
+Removed unused local EffectTemplate = import('/lua/EffectTemplates.lua')
+Removed unused local EffectUtil = import('/lua/EffectUtilities.lua')
+Removed unused local AIUtils = import('/lua/ai/aiutilities.lua')
+
+Unit UAL0401
+Removed unused local utilities = import('/lua/utilities.lua')
+
+Unit AS0202
+Removed unused local AAMWillOWisp = AeonWeapons.AAMWillOWisp
+
+Unit UEO1103
+Removed unused local TSeaUnit = import('/lua/terranunits.lua').TSeaUnit
+
+Unit  AS0103
+Removed unused local EffectTemplate = import('/lua/EffectTemplates.lua')
+
+Unit UEL0108
+Removed unused local DefaultUnitsFile = import('/lua/defaultunits.lua')
+
+Unit XRL0404
+Removed unused local MobileUnit = import('/lua/defaultunits.lua').MobileUnit
+Removed unused local EffectUtil = import('/lua/EffectUtilities.lua')
+Removed unused local Entity = import('/lua/sim/Entity.lua').Entity
+Removed unused local Weapon = import('/lua/sim/Weapon.lua').Weapon
+
+
+*************************************************************************************************************************************
+V1.83 (3652) (17.Apr.2016)
+
+Changed uiutil.lua, gamecommon.lua, unitview.lua. (Hook for icons will not be activated if gameversion 3652+ is detected)
+
+Updated all hook's from .lua files.
+
+Added Sorian AI support to all units.
+
+Removed unneeded utilities.lua
+
+ - Start Unit debugging. Gameversion=(3652)
+ - found 58 modded units in modfolders
+ - found 52 unit icons in modfolders
+ - found 0 AI templates in mod/lua/customunits
+ - found 0 units with AI support
+ - Unit:(url0405) Name:(Monkeylord) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit url0405 (Experimental Spiderbot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit:(ual0405) Name:(Galactic Colossus) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit ual0405 (Experimental Assault Bot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit:(ueb4205) Name:(Light Parashield) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit ueb4205 (Light Shield Generator) StrategicIconName (icon_land2_shield) dont match TechLevel (1) 
+ - Unit:(xsse0001) (Experimental Tech1 Spaceship) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit xsse0001 BuildByTier(1) != OwnTech(4)
+ - Unit xsse0001 (Experimental Tech1 Spaceship) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(urse0001) (Experimental Tech1 Spaceship) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit urse0001 BuildByTier(1) != OwnTech(4)
+ - Unit urse0001 (Experimental Tech1 Spaceship) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(urb5001) Name:(Eclispe) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit urb5001 (Heavy Stealth Field Generator) Categories.TECH3 dont match TechLevel (RULEUTL_Advanced) 
+ - Unit xsl0310 Name: Mobile Nuke Laucnher (Mobile Nuke Laucnher) BYFACTORY and MOBILE and has Category.DRAGBUILD but dont need it.
+ - Unit xsl0310 has Weapons, but no Veteran Array.
+ - Unit xsl0310 (Mobile Nuke Laucnher) Categories.TECH3 dont match TechLevel (RULEUTL_Advanced) 
+ - Unit:(urb4401) Name:(Experimentale Heavy Nuke Denfense) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit urb4401 has Weapons, but no Veteran Array.
+ - Unit:(xsa0306) (Gunship) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit ual0311 (EMP Missile Launcher) Categories.TECH3 dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(uese0001) (Tech1 Experimental Spaceship) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit uese0001 BuildByTier(1) != OwnTech(4)
+ - Unit uese0001 (Tech1 Experimental Spaceship) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(uase0001) (Experimental Tech1 Spaceship) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit uase0001 BuildByTier(1) != OwnTech(4)
+ - Unit uase0001 (Experimental Tech1 Spaceship) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(url0311) (Tech 3 Missile Bot) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit url0311 (Tech 3 Missile Bot) Categories.TECH3 dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(uab2310) Name:(Heavy Experimental Defense Installation ) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit:(uab2310) (Heavy Experimental Defense Installation ) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit uab2310 (Heavy Experimental Defense Installation ) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit urb5201 has no Unitname! Description=(Tech 1 Air Staging Facility)
+ - Unit:(uab5201) Name:( Tech 1 Air Staging Facility) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit uab5201 (Air Staging Facility) Categories.TECH1 dont match TechLevel (RULEUTL_Advanced) 
+ - Unit urbse0001 (Heavy Orbital Defence) Categories.TECH2 dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(uelew0001) (Heavy Mobile Fortress Experimental Tech 1) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit uelew0001 BuildByTier(1) != OwnTech(4)
+ - Unit uelew0001 (Heavy Mobile Fortress Experimental Tech 1) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit ualew0001 Name: Hover Tank Experimental tech 1 (Hover Tank Experimental tech 1) is mobile and Build by Engeneer, but has no DRAGBUILD Category
+ - Unit ualew0001 BuildByTier(1) != OwnTech(4)
+ - Unit ualew0001 (Hover Tank Experimental tech 1) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit urlew0001 BuildByTier(1) != OwnTech(4)
+ - Unit urlew0001 (Heavy Tech 1 Experimentale Missile Launcher Bot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit uabse0001 (Heavy Orbital Defence) Categories.TECH2 dont match TechLevel (RULEUTL_Basic) 
+ - Unit:(xsl0405) Name:(Ythotha) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit xsl0405 (Experimental Assault Bot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit:(xrl0405) Name:(Megalith) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit xrl0405 (Experimental Megabot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit:(ueb5201) Name:(Tech 1 Air Staging Facility) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit ueb5201 (Air Staging Facility) Categories.TECH1 dont match TechLevel (RULEUTL_Advanced) 
+ - Unit:(ead0001) (Point Defense) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit ead0001 BuildByTier(5) != OwnTech(2)
+ - Unit:(uea0402) Name:(EFOF Transport) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit uea0110 (Support Bomber) Categories.TECH2 dont match TechLevel (RULEUTL_Basic) 
+ - Unit uea0110 (Support Bomber) StrategicIconName (icon_bomber1_directfire) dont match TechLevel (2) 
+ - Unit:(xsb5201) Name:(Mini-Iathu-uhthe) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit:(xsb2306) Name:(Heavy Point Defense) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit:(xsb2306) (Heavy Point Defense) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit:(uea0401) Name:(EFOF Infallible) can be Build by Tier 3 Commander but not from Tier 4 Commander!
+ - Unit uea0401 (Spaceships) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Basic) 
+ - Unit xsl0110 has 0 weapons but a Veteran Array.
+ - Unit ual5001 Name: The Renaissance (Mobile Air Staging Platform ) BYFACTORY and MOBILE and has Category.DRAGBUILD but dont need it.
+ - Unit ual5001 BuildByTier(2) != OwnTech(1)
+ - Unit ual5001 (Mobile Air Staging Platform ) Categories.TECH1 dont match TechLevel (RULEUTL_Advanced) 
+ - Unit uebse0001 (Heavy Orbital Defence) Categories.TECH2 dont match TechLevel (RULEUTL_Basic) 
+ - Unit xsl0206 BuildByTier(2) != OwnTech(4)
+ - Unit xsl0206 (Mobile Anti-Subs Launcher) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Advanced) 
+ - Unit:(xsle0001) (Experimental Tech 1 Assault Bot) has no Display.Abilities. Maybe no unit tooltip aviable then!
+ - Unit xsle0001 BuildByTier(1) != OwnTech(4)
+ - Unit xsle0001 (Experimental Tech 1 Assault Bot) Categories.EXPERIMENTAL dont match TechLevel (RULEUTL_Secret) 
+ - Unit:(xsse0001) - LOD[1] lod.MeshName is missing in blueprint
+ - Unit:(uas0301) - LOD[1] Albedo-File /mods/softlastasdrumod/units/lessecteux/uas0301/uas0401_lod1_albedo.dds is missing on disk
+ - Unit:(uas0301) - LOD[1] Specular-File /mods/softlastasdrumod/units/lessecteux/uas0301/uas0401_lod1_specteam.dds is missing on disk
+ - Unit:(uese0001) IconFadeInZoom is != 130
+ - Unit:(uese0001) - LOD[1] lod.MeshName is missing in blueprint
+ - Unit urb5201 has no Unitname! Description=(Tech 1 Air Staging Facility)
+ - Unit:(urlew0001) - LOD[0] lod.AlbedoName is missing in blueprint
+ - Unit:(uabse0001) - LOD[1] lod.MeshName is missing in blueprint
+ - Unit:(xsl0110) - LOD[1] Specular-File /mods/softlastasdrumod/units/lespasbeaux/xsl0110/xsl0103_lod1_specteam.dds is missing on disk
+ - Unit:(uebse0001) - LOD[1] lod.MeshName is missing in blueprint
+ - Unit url0405 veryfied, has Icon but no AI Support. Name:(Monkeylord) (Experimental Spiderbot)
+ - Unit ual0405 veryfied, has Icon but no AI Support. Name:(Galactic Colossus) (Experimental Assault Bot)
+ - Unit ueb4205 veryfied, has Icon but no AI Support. Name:(Light Parashield) (Light Shield Generator)
+ - Unit xsse0001 veryfied, has Icon but no AI Support. Name:(The Tlacuconos) (Experimental Tech1 Spaceship)
+ - Unit urse0001 veryfied, has Icon but no AI Support. Name:(The Land Shadow) (Experimental Tech1 Spaceship)
+ - Unit urb5001 veryfied, has Icon but no AI Support. Name:(Eclispe) (Heavy Stealth Field Generator)
+ - Unit xsl0310 veryfied, has Icon but no AI Support. Name:(Mobile Nuke Laucnher) (Mobile Nuke Laucnher)
+ - Unit urb4401 veryfied, has Icon but no AI Support. Name:(Experimentale Heavy Nuke Denfense) (Anti Nuke Experimental)
+ - Unit ura0205 veryfied, has Icon but no AI Support. Name:(The Hawk) (EMP Bomber)
+ - Unit xsa0306 veryfied, has Icon but no AI Support. Name:(Virutola) (Gunship)
+ - Unit uel0206 veryfied, has Icon but no AI Support. Name:(Morter Tank Tech 2) (Morter Tank Tech 2)
+ - Unit ual0311 veryfied, has Icon but no AI Support. Name:(EMP Missile Launcher) (EMP Missile Launcher)
+ - Unit url0206 veryfied, has Icon but no AI Support. Name:( The Turtle) (Amphibious Heavy Tank)
+ - Unit uas0301 veryfied, has Icon but no AI Support. Name:(Submarine Battleship) (Submarine Battleship)
+ - Unit uea0306 veryfied, has Icon but no AI Support. Name:(Tornado) (Fighter/Bomber)
+ - Unit uese0001 veryfied, has Icon but no AI Support. Name:(EFOF Cleaner) (Tech1 Experimental Spaceship)
+ - Unit uase0001 veryfied, has Icon but no AI Support. Name:(The Falling Star) (Experimental Tech1 Spaceship)
+ - Unit url0311 veryfied, has Icon but no AI Support. Name:(Tech 3 Missile Bot) (Tech 3 Missile Bot)
+ - Unit uab2310 veryfied, has Icon but no AI Support. Name:(Heavy Experimental Defense Installation ) (Heavy Experimental Defense Installation )
+ - Unit urb5201 has no Unitname! Description=(Tech 1 Air Staging Facility)
+ - Unit ura0110 veryfied, has Icon but no AI Support. Name:(Support Bomber) (Support Bomber)
+ - Unit uab5201 veryfied, has Icon but no AI Support. Name:( Tech 1 Air Staging Facility) (Air Staging Facility)
+ - Unit urbse0001 veryfied, has Icon but no AI Support. Name:(Phlegyas) (Heavy Orbital Defence)
+ - Unit uelew0001 veryfied, has Icon but no AI Support. Name:(Heavy Mobile Fortress Experimental Tech 1) (Heavy Mobile Fortress Experimental Tech 1)
+ - Unit ualew0001 veryfied, has Icon but no AI Support. Name:(Hover Tank Experimental tech 1) (Hover Tank Experimental tech 1)
+ - Unit urlew0001 veryfied, has Icon but no AI Support. Name:(Heavy Tech 1 Experimentale Missile Launcher Bot) (Heavy Tech 1 Experimentale Missile Launcher Bot)
+ - Unit uabse0001 veryfied, has Icon but no AI Support. Name:(The Missionary) (Heavy Orbital Defence)
+ - Unit xsl0405 veryfied, has Icon but no AI Support. Name:(Ythotha) (Experimental Assault Bot)
+ - Unit xrl0405 veryfied, has Icon but no AI Support. Name:(Megalith) (Experimental Megabot)
+ - Unit ueb5201 veryfied, has Icon but no AI Support. Name:(Tech 1 Air Staging Facility) (Air Staging Facility)
+ - Unit ead0001 BuildByTier(5) ~= OwnTech(2)
+ - Unit uea0402 veryfied, has Icon but no AI Support. Name:(EFOF Transport) (Transport)
+ - Unit uea0110 veryfied, has Icon but no AI Support. Name:(AS-U 010 Protector) (Support Bomber)
+ - Unit xsb5201 veryfied, has Icon but no AI Support. Name:(Mini-Iathu-uhthe) (Air Staging Beacon)
+ - Unit xsb2306 veryfied, has Icon but no AI Support. Name:(Heavy Point Defense) (Heavy Point Defense)
+ - Unit uel0108 veryfied, has Icon but no AI Support. Name:(SD-MA12 Bunker) ( Deployable Medium Tank)
+ - Unit ual0108 veryfied, has Icon but no AI Support. Name:(Ouaip) (Mobile Torpedo Launcher)
+ - Unit uea0401 veryfied, has Icon but no AI Support. Name:(EFOF Infallible) (Spaceships)
+ - Unit xsl0110 veryfied, has Icon but no AI Support. Name:(Ehuhua) (Mobile Shield Generator)
+ - Unit ual5001 veryfied, has Icon but no AI Support. Name:(The Renaissance) (Mobile Air Staging Platform )
+ - Unit uebse0001 veryfied, has Icon but no AI Support. Name:(The Eradicator) (Heavy Orbital Defence)
+ - Unit xsl0206 veryfied, has Icon but no AI Support. Name:(Ohiescebom) (Mobile Anti-Subs Launcher)
+ - Unit ual0305 veryfied, has Icon but no AI Support. Name:(Gerridae) (Heavy Hover Tank)
+ - Unit xsle0001 veryfied, has Icon but no AI Support. Name:(Experimental Tech 1 Assault Bot) (Experimental Tech 1 Assault Bot)

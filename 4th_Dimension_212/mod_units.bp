@@ -1,0 +1,57 @@
+#================================================= land units =================================================#
+
+UnitBlueprint{
+	Merge=true,
+	BlueprintId="ual0401",
+
+	Display = {	
+		AnimationWalkRate = 0.9,
+		MovementEffects = {
+			Land = {
+				Footfall = {
+					Damage = {
+						Amount = 25000,
+	                },
+                },
+            },
+        },				
+	},	
+	Defense = {
+        Health = 240000,
+        MaxHealth = 240000,	
+    },   
+	Economy = {
+        BuildCostEnergy = 1850000,
+        BuildCostMass = 130000,
+        BuildTime = 100000,
+    },  
+  	Physics = {
+  		MaxAcceleration = 1.0,
+        MaxBrake = 1.5,
+        MaxSpeed = 1.2,
+        TurnRate = 35,
+	},      	
+	Veteran = {
+        Level1 = 250,
+        Level2 = 500,
+        Level3 = 750,
+        Level4 = 1000,
+        Level5 = 1250,
+    },	
+    Weapon = {
+    {
+    MaxRadius = 20,
+    Damage = 1650,
+    },
+    {
+    TargetRestrictDisallow = 'UNTARGETABLE, HEAVY, HOLOGRAM',
+    },
+    {
+    TargetRestrictDisallow = 'UNTARGETABLE, HEAVY, HOLOGRAM',
+    },
+    {
+    Damage = 10000,
+    DamageRadius = 7,
+    },
+  	}
+}

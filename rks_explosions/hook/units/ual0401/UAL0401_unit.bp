@@ -1,0 +1,35 @@
+UnitBlueprint {
+    Merge = true,
+    BlueprintId = 'ual0401',
+    Audio = {
+        Destroyed = Sound {
+            Bank = 'UALWeapon',
+            Cue = 'UAL0401_Phason_Laser_Stop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+		DestroyedFinal = Sound {
+            Bank = 'XRL_Destroy', -- 'UALDestroy'
+            Cue = 'XRL0403_Death', -- 'UAL0401_Destroy'
+            LodCutoff = 'UnitMove_LodCutoff', -- 'UnitMove_LodCutoff'
+        },
+        DestroyedStep2 = Sound {
+            Bank = 'UALDestroy',
+            Cue = 'UAL_Destroy_Land',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        DestroyedStep3 = Sound {
+            Bank = 'UALDestroy',
+            Cue = 'UAL0401_Destroy',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+    },
+    Display = {
+        Mesh = {
+            LODs = {
+                {
+                    LODCutoff = 1000,
+                },
+            },
+        },
+    },
+}

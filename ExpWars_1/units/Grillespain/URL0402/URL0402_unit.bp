@@ -1,0 +1,60 @@
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="url0402",      
+    Display = {
+        Abilities = {
+            '<LOC ability_amphibious>Amphibious',
+            '<LOC ability_aa>Anti-Air',
+            '<LOC ability_torpedo>Torpedoes',
+            '<LOC ability_sonar>Sonar',
+            '<LOC ability_massive>Massive',
+            '<LOC ability_deathaoe>Volatile',
+            '<LOC ability_stealthfield>Stealth Field',
+            '<LOC ability_personalstealth>Personal Stealth',
+        },
+    },
+
+    
+    
+    Categories = {
+        'PRODUCTSC1',
+        'SELECTABLE',
+        'CYBRAN',
+        'MOBILE',
+        'LAND',
+        'EXPERIMENTAL',
+        'DIRECTFIRE',
+        'ANTIAIR',
+        'NEEDMOBILEBUILD',
+        'SONAR',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'DRAGBUILD',
+        'OVERLAYDIRECTFIRE',
+        'OVERLAYSONAR',
+        'OVERLAYANTIAIR',
+        'OVERLAYANTINAVY',
+    },
+    General = {
+        Category = 'Experimental',
+        Classification = 'RULEUC_MilitaryVehicle',
+        CommandCaps = {
+            RULEUCC_Attack = true,
+            RULEUCC_CallTransport = true,
+            RULEUCC_Capture = false,
+            RULEUCC_Guard = true,
+            RULEUCC_Move = true,
+            RULEUCC_Nuke = false,
+            RULEUCC_Patrol = true,
+            RULEUCC_Pause = true,
+            RULEUCC_Reclaim = false,
+            RULEUCC_Repair = false,
+            RULEUCC_RetaliateToggle = true,
+            RULEUCC_Stop = true,
+            RULEUCC_Transport = true,
+        },
+    },
+    Transport = {
+        TransportClass = 4,
+    },
+}

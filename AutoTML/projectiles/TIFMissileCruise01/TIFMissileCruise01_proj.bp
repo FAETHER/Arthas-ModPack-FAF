@@ -1,0 +1,28 @@
+ProjectileBlueprint
+
+{
+    Merge = true,
+    Source = "/projectiles/TIFMissileCruise01/TIFMissileCruise01_proj.bp",
+
+    Display = {
+        CameraFollowTimeout = 2,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Scale = 1.5,
+            Type = 'Large01',
+        },
+    },
+
+    Economy = {
+        BuildCostEnergy = 20000,
+        BuildCostMass = 130,
+        BuildTime = 4800,
+    },
+
+    Physics = {
+
+        TrackTarget = true,
+        TrackTargetGround = false,
+
+    },
+}

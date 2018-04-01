@@ -1,0 +1,28 @@
+ProjectileBlueprint
+
+{
+    Merge = true,
+    Source = "/projectiles/AIFMissileTactical01/AIFMissileTactical01_proj.bp",
+
+    Display = {
+        CameraFollowTimeout = 2,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Scale = 0.50,
+            Type = 'Large01',
+        },
+    },
+
+    Economy = {
+        BuildCostEnergy = 17500,
+        BuildCostMass = 180,
+        BuildTime = 4800,
+    },
+
+    Physics = {
+
+        TrackTarget = true,
+        TrackTargetGround = false,
+
+    },
+}

@@ -1,0 +1,98 @@
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0202",     
+    
+    Economy = {
+        BuildCostEnergy = 51187,
+        BuildCostMass = 2756,
+        BuildRate = 40,
+        BuildTime = 7875,
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0201",     
+    
+    Economy = {
+        BuildCostEnergy = 31500,
+        BuildCostMass = 3500,
+        BuildRate = 40,
+        BuildTime = 7000,
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0203",     
+    
+    Economy = {
+        BuildCostEnergy = 23625,
+        BuildCostMass = 5118,
+        BuildRate = 40,
+        BuildTime = 7875,
+
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0301",     
+    
+    Economy = {
+        BuildCostEnergy = 106312,
+        BuildCostMass = 11812,
+        BuildRate = 60,
+        BuildTime = 31500,
+
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0302",     
+    
+    Economy = {
+        BuildCostEnergy = 173250,
+        BuildCostMass = 9450,
+        BuildRate = 60,
+        BuildTime = 31500,
+
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb0303",     
+    
+    Economy = {
+        BuildCostEnergy = 87750,
+        BuildCostMass = 20250,
+        BuildRate = 60,
+        BuildTime = 27000,
+
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb1202",     
+    
+    Economy = {
+        BuildCostEnergy = 8100,
+        BuildCostMass = 1350,
+        BuildRate = 15,
+        BuildTime = 3150,
+    },
+}
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="xsb1302",     
+    
+    Economy = {
+        BuildCostEnergy = 47440,
+        BuildCostMass = 6900,
+        BuildTime = 4312,
+    },
+}

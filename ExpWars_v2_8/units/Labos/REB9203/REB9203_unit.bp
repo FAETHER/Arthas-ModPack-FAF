@@ -1,0 +1,252 @@
+--# REB9203 Recherche UEF Unités Mer Tech 2 Veterans Niveau 3
+--# Créé par Manimal le 19 janvier 2010
+--# Rev.Date : 11 juillet 2010
+
+UnitBlueprint {
+    AI = {
+        TargetBones = {
+            'UEC1201',    --'REB9203',
+        },
+    },
+    Audio = {
+        Construct = Sound {
+            Bank = 'UEB',
+            Cue = 'UEB0103_Construct_Start',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        ConstructLoop = Sound {
+            Bank = 'UEB',
+            Cue = 'UEB0103_Construct_Loop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        DeathExplosion = Sound {
+            Bank = 'UELDestroy',
+            Cue = 'UEB_Destroy_Lrg_PreDestroy',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        Destroyed = Sound {
+            Bank = 'UELDestroy',
+            Cue = 'UEB_Destroy_Huge',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        DoneBeingBuilt = Sound {
+            Bank = 'UEB',
+            Cue = 'UEB0103_Activate',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        EnhanceEnd = Sound {
+            Bank = 'UnitsGlobal',
+            Cue = 'GLB_Enhance_Stop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        EnhanceFail = Sound {
+            Bank = 'UnitsGlobal',
+            Cue = 'GLB_Enhance_Fail',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        EnhanceLoop = Sound {
+            Bank = 'UnitsGlobal',
+            Cue = 'GLB_Enhance_Loop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        EnhanceStart = Sound {
+            Bank = 'UnitsGlobal',
+            Cue = 'GLB_Enhance_Start',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        UISelection = Sound {
+            Bank = 'Interface',
+            Cue = 'UEF_Select_Structure',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+    },
+    BuildIconSortPriority = 10,
+    Categories = {
+		'PRODUCTEW2',
+        'SELECTABLE',
+		'REBUILTBYTIER2COMMANDER',
+		'BUILTBYVETLABO02',
+        'UEF',
+        'NAVAL',
+        'STRUCTURE',
+        'TECH2',
+		'LABO',
+		'RECHERCHE',
+		'VETERAN',
+		'UNIQUE',
+        'SPECIALLOWPRI',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SHOWQUEUE',
+        'ENGINEER',  -- ASTUCE POUR RÉCUPÉRER LE LABO ET CRÉER SON AVATAR !
+    },
+
+	CetteRecherche = {
+		nomDeRecherche = 'VETERAN',
+		niveauDeRecherche = 3,
+	},
+
+    CollisionOffsetX = 0,
+    CollisionOffsetY = 0,
+    CollisionOffsetZ = 0,
+    Defense = {
+        AirThreatLevel = 0,
+        ArmorType = 'Structure',
+        EconomyThreatLevel = 3,
+        Health = 7100,
+        MaxHealth = 7100,
+        RegenRate = 0,
+        SubThreatLevel = 0,
+        SurfaceThreatLevel = 0,
+    },
+    Description = '<LOC reb9203_desc>UEF Naval Veteran Research Lab',
+    Display = {
+        Abilities = {
+            '<LOC ability_recherche>Rechercher des Unites de Mer Veterans',
+        },
+		AnimationUpgrade = '/Mods/ExpWars_v2_8/units/Labos/REB9203/REB9203_aupgrade.sca',
+
+        Mesh = {
+            IconFadeInZoom = 130,
+            LODs = {
+                {
+                    AlbedoName = '/units/ueb0303/ueb0303_albedo.dds',
+                    LODCutoff = 220,
+                    NormalsName = '/units/ueb0303/ueb0303_normalsTS.dds',
+                    Scrolling = true,
+                    ShaderName = 'Unit',
+                    SpecularName = '/units/ueb0303/ueb0303_specteam.dds',
+                },
+            },
+        },
+        PlaceholderMeshName = 'UXB9200',
+        SpawnRandomRotation = false,
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar8x_01_albedo',
+                FadeOut = 150,
+                Length = 12.8,
+                Normal = 'Tarmacs/Tar8x_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 12.8,
+            },
+        },
+        UniformScale = 0.07,  -- ORIGINAL  UniformScale = 0.1
+    },
+    Economy = {
+        BuildCostEnergy = 60000,
+        BuildCostMass = 4000,
+        BuildRate = 60,
+        BuildTime = 9000,
+        BuildableCategory = {
+            'BUILTBYVETLABO03 UEF NAVAL TECH2 VETERAN',
+        },
+        MaintenanceConsumptionPerSecondEnergy = 600,
+        MaintenanceConsumptionPerSecondMass = 13,
+        NaturalProducer = false,
+        RebuildBonusIds = {
+            'reb9200',
+            'reb9201',
+            'reb9202',
+            'reb9203',
+            'reb9204',
+            'reb9205',
+        },
+        StorageEnergy = 280000,
+        StorageMass = 11000,
+    },
+    Footprint = {
+        SizeX = 5,
+        SizeZ = 5,
+    },
+    General = {
+        Category = 'Research Lab',                       
+        Classification = 'RULEUC_MiscSupport',
+        CommandCaps = {
+            RULEUCC_Attack = false,
+            RULEUCC_CallTransport = false,
+            RULEUCC_Capture = false,
+            RULEUCC_Guard = false,
+            RULEUCC_Move = false,
+            RULEUCC_Nuke = false,
+            RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
+            RULEUCC_Reclaim = false,
+            RULEUCC_Repair = false,
+            RULEUCC_RetaliateToggle = false,
+            RULEUCC_Stop = true,
+            RULEUCC_Transport = false,
+        },
+        ConstructionBar = true,
+        FactionName = 'UEF',
+        Icon = 'sea',
+        SelectionPriority = 5,
+        TechLevel = 'RULEUTL_Advanced',
+        UnitName = 'VetLab LT2V3',
+        UnitWeight = 1,
+        UpgradesFrom = 'reb9202',
+        UpgradesFromBase = 'reb9100',
+        UpgradesTo = 'reb9204',
+    },
+    Intel = {
+        VisionRadius = 20,
+    },
+    Interface = {
+        HelpText = '<LOC reb9203_help>UEF Naval Veteran Research Lab',
+    },
+    LifeBarHeight = 0.075,
+    LifeBarOffset = 1.75,
+    LifeBarSize = 4.5,
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Air = false,
+            LAYER_Land = false,
+            LAYER_Orbit = false,
+            LAYER_Seabed = false,
+            LAYER_Sub = false,
+            LAYER_Water = true,
+        },
+        DragCoefficient = 0.2,
+        FlattenSkirt = true,
+        MaxSteerForce = 0,
+        MeshExtentsX = 5,
+        MeshExtentsY = 4.5,
+        MeshExtentsZ = 5,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_None',
+        SkirtOffsetX = -0.5,
+        SkirtOffsetZ = -0.5,
+        SkirtSizeX = 6,
+        SkirtSizeZ = 6,
+        TurnRate = 0,
+    },
+    SelectionSizeX = 3.2,   -- ORIGINAL  SelectionSizeX = 1.75
+    SelectionSizeZ = 3.2,   -- ORIGINAL  SelectionSizeZ = 2.1
+    SelectionThickness = 0.26,
+    SizeX = 4.2,
+    SizeY = 0.8,
+    SizeZ = 4.5,
+    StrategicIconName = 'icon_structure2_naval',
+    StrategicIconSortPriority = 207,
+    Wreckage = {
+        Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
+        EnergyMult = 0,
+        HealthMult = 0.9,
+        MassMult = 0.9,
+        ReclaimTimeMultiplier = 1,
+        WreckageLayers = {
+            Air = false,
+            Land = true,
+            Seabed = false,
+            Sub = false,
+            Water = true,
+        },
+    },
+}

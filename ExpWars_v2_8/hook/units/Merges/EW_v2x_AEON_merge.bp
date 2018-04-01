@@ -1,0 +1,97 @@
+--[[#######################################################################
+#  File     :  /hook/units/Merge/EW_v2x_AEON_merge.bp
+#  Author(s):  Manimal
+#  Cre.Date :  08 février 2011 15:56
+#  Summary  :  AEON Blueprint Merge for ExpWars v2.X
+#  -----------------------------
+#  Modif.by :  xxxxxx
+#  Mod.Date :  jj mmmmm aaaa
+#  -----------------------------
+#  Revis.by :  Manimal
+#  Rev.Date :  13 février 2011 18:04
+#  Rev.Date :  21 mars 2011 08:29 -> rééquilibrage
+#  -----------------------------
+#  Copyright © 2011 Gas Powered Games, Inc.  All rights reserved.
+#######################################################################]]--
+
+
+--[[
+# N.B.: CATEGORIE LAND MANQUANTE DANS TOUS LES BATIMENTS DE GPG
+# UAB1101
+# UAB1102
+# UAB1103
+# UAB1104
+# UAB1105
+# UAB1106
+# UAB1201
+# UAB1202
+# UAB1301
+# UAB1302
+# UAB1303
+# UAB0304
+]]--
+
+
+### BATIMENTS AEON ###
+
+
+--[[
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="uab",
+
+}
+]]--
+
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="uab0304",
+
+    Categories = {
+        'PRODUCTEW2',
+        'SELECTABLE',
+        'BUILTBYT3LANDENGINEER', 
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER4COMMANDER',
+        'AEON',
+        'STRUCTURE',
+		'LAND',           -- AJOUT MANIMAL CATEGORIE MANQUANTE
+        'TECH3',
+        'FACTORY',
+        'GATE',
+        'RALLYPOINT',
+        'DRAGBUILD',
+        'SIZE20',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SHOWQUEUE',
+        'SORTSTRATEGIC',
+    },
+	
+	Economy = {
+        BuildCostEnergy = 300000,
+        BuildCostMass = 30000,
+        BuildRate = 600,
+        BuildTime = 30000,
+        BuildableCategory = {
+            'BUILTBYQUANTUMGATE AEON',
+        },
+        RebuildBonusIds = {
+            'uab0304',
+        },
+    },
+	
+
+	TeleportDamage = {
+		Radius         = 5,
+		Amount         = 100,
+		Type           = 'Normal', 
+		Friendly       = true,
+		RingRadius     = 10,
+		RingTicks      = 1, --# EN SECONDES, PAS EN TICKS !!!
+		RingTotalTime  = 2,   --# EN SECONDES, PAS EN TICKS !!!
+		RingDamage     = 50,
+	},
+
+}

@@ -1,0 +1,119 @@
+UnitBlueprint {
+    Merge = true,        -- Merge = true  leaves the original file intact and only modifies what you change
+    BuildIconSortPriority = 10,
+    Defense = {
+        AirThreatLevel = 0,
+        ArmorType = 'Normal',
+        EconomyThreatLevel = 0,
+        Health = 31000,
+        MaxHealth = 31000,
+        RegenRate = 15,
+        SubThreatLevel = 0,
+        SurfaceThreatLevel = 150,
+    },
+    Economy = {
+        BuildCostEnergy = 117000,
+        BuildCostMass = 9300,
+        BuildRate = 60,
+        BuildTime = 360000,
+        BuildableCategory = {
+            'BUILTBYTIER3ENGINEER SERAPHIM',
+        },
+        NaturalProducer = true,
+        ProductionPerSecondEnergy = 500,
+        ProductionPerSecondMass = 5,
+        StorageEnergy = 5000,
+        StorageMass = 275,
+        TeleportEnergyMod = 2.5,
+        TeleportMassMod = 0,
+        TeleportTimeMod = 0.0001,
+    },
+    Enhancements = {
+        DamageStabilization = {
+            BuildCostEnergy = 150000,
+            BuildCostMass = 3500,
+            BuildTime = 15000,
+            NewHealth = 14000,
+            NewRegenRate = 250,
+        },
+        DamageStabilizationRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        EngineeringThroughput = {
+            BuildCostEnergy = 150000,
+            BuildCostMass = 4200,
+            BuildTime = 18000,
+        },
+        EngineeringThroughputRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        EnhancedSensors = {
+            BuildCostEnergy = 40000,
+            BuildCostMass = 2000,
+            BuildTime = 10000,
+        },
+        EnhancedSensorsRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        Missile = {
+            BuildCostEnergy = 100000,
+            BuildCostMass = 2000,
+            BuildTime = 12000,
+        },
+        MissileRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        Overcharge = {
+            BuildCostEnergy = 540000,
+            BuildCostMass = 7000,
+            BuildTime = 30000,
+        },
+        OverchargeRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        Shield = {
+            BuildCostEnergy = 280625,
+            BuildCostMass = 3000,
+            BuildTime = 15000,
+            RegenAssistMult = 10,
+            ShieldEnergyDrainRechargeTime = 5,
+            ShieldMaxHealth = 25000,
+            ShieldRechargeTime = 160,
+            ShieldRegenRate = 22,
+            ShieldRegenStartTime = 1,
+        },
+        ShieldRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+        },
+        Teleporter = {
+            BuildCostEnergy = 1500000,
+            BuildCostMass = 15000,
+            BuildTime = 18000,
+        },
+        TeleporterRemove = {
+            BuildCostEnergy = 1,
+            BuildCostMass = 1,
+            BuildTime = 0.1,
+    },
+    Intel = {
+        FreeIntel = true,
+        OmniRadius = 16,
+        VisionRadius = 26,
+        WaterVisionRadius = 26,
+    },
+}
+}
+
+

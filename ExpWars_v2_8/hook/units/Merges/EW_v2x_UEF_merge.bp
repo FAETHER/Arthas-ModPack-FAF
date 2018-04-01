@@ -1,0 +1,96 @@
+--[[#######################################################################
+#  File     :  /hook/units/Merge/EW_v2x_UEF_merge.bp
+#  Author(s):  Manimal
+#  Cre.Date :  08 février 2011 15:56
+#  Summary  :  UEF Blueprint Merge for ExpWars v2.X
+#  -----------------------------
+#  Modif.by :  xxxxxx
+#  Mod.Date :  jj mmmmm aaaa
+#  -----------------------------
+#  Revis.by :  Manimal
+#  Rev.Date :  13 février 2011 18:04
+#  Rev.Date :  21 mars 2011 08:30 -> rééquilibrage
+#  -----------------------------
+#  Copyright © 2011 Gas Powered Games, Inc.  All rights reserved.
+#######################################################################]]--
+
+
+--[[
+# N.B.: CATEGORIE LAND MANQUANTE DANS TOUS LES BATIMENTS DE GPG
+# UEB1101
+# UEB1102
+# UEB1103
+# UEB1104
+# UEB1105
+# UEB1106
+# UEB1201
+# UEB1202
+# UEB1301
+# UEB1302
+# UEB1303
+# UEB0304
+]]--
+
+
+### BATIMENTS UEF ###
+
+
+--[[
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="ueb",
+
+}
+]]--
+
+
+UnitBlueprint {
+	Merge=true,
+	BlueprintId="ueb0304",
+
+    Categories = {
+        'PRODUCTEW2',
+        'SELECTABLE',
+        'BUILTBYT3LANDENGINEER', 
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER4COMMANDER',
+        'UEF',
+        'STRUCTURE',
+		'LAND',           -- AJOUT MANIMAL CATEGORIE MANQUANTE
+        'TECH3',
+        'FACTORY',
+        'GATE',
+        'RALLYPOINT',
+        'DRAGBUILD',
+        'SIZE20',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SHOWQUEUE',
+        'SORTSTRATEGIC',
+    },
+	
+	Economy = {
+        BuildCostEnergy = 300000,
+        BuildCostMass = 30000,
+        BuildRate = 600,
+        BuildTime = 30000,
+        BuildableCategory = {
+            'BUILTBYQUANTUMGATE UEF',
+        },
+        RebuildBonusIds = {
+            'ueb0304',
+        },
+    },
+
+	TeleportDamage = {
+		Amount         = 100,
+		Radius         = 5,
+		Type           = 'Normal', 
+		Friendly       = true,
+		RingRadius     = 10,
+		RingTicks      = 1,   --# EN SECONDES, PAS EN TICKS !!!
+		RingTotalTime  = 2,   --# EN SECONDES, PAS EN TICKS !!!
+		RingDamage     = 50,
+	},
+
+}

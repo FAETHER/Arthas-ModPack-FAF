@@ -1,0 +1,27 @@
+Do not merge the categories!
+It will break ascu presets added from faf!
+Do not do this: 
+    Categories = {
+        'PRODUCTSC1',
+        'SELECTABLE',
+        'AEON',
+        'MOBILE',
+        'LAND',
+        'TECH3',
+        'ENGINEER',
+        'CONSTRUCTION',
+        'REPAIR',
+        'RECLAIM',
+        'REBUILDER',
+        'BUILTBYQUANTUMGATE',
+        'CAPTURE',
+        'VISIBLETORECON',
+        'SUBCOMMANDER',
+        'PATROLHELPER',
+        'SHOWQUEUE',
+        'OVERLAYDIRECTFIRE',
+        'OVERLAYOMNI',
+ },
+
+Stuff like this removed and also cleaned some other stuff for compability. 
+No balance changes whatsoever.

@@ -1,0 +1,82 @@
+UnitBlueprint {	
+	Merge = true, 
+		Defense = {
+	        AirThreatLevel = 0,	      
+	        ArmorType = 'Normal',		   
+	        EconomyThreatLevel = 0,		    
+	        Health = 30000,		       
+	        MaxHealth = 30000,		      
+	        RegenRate = 17,	       
+	        SubThreatLevel = 0,		       
+	        SurfaceThreatLevel = 150,	
+	 		},
+		Weapon = {
+			Damage = 200,
+			},
+		Economy = {
+			BuildCostEnergy = 123000,
+			BuildCostMass = 8700,
+			BuildRate = 60,
+			BuildTime = 360000,
+			NaturalProducer = true,
+			ProductionPerSecondEnergy = 300,
+			ProductionPerSecondMass = 3,
+			SacrificeEnergyMult = 0.6,
+			SacrificeMassMult = 0.6,
+			StorageEnergy = 5000,
+			StorageMass = 275,
+			TeleportEnergyMod = 3,
+			TeleportMassMod = 0,
+			TeleportTimeMod = 0.0001,
+		},			
+		Enhancements = {
+			EngineeringFocusingModule = {
+            BuildCostEnergy = 150000,
+            BuildCostMass = 4200,
+            BuildTime = 18000,
+        },			
+        ResourceAllocation = {
+            BuildCostEnergy = 60000,
+            BuildCostMass = 5000,
+            BuildTime = 12000,
+            ProductionPerSecondEnergy = 900,
+            ProductionPerSecondMass = 11,
+        },			
+	    Sacrifice = {
+            BuildCostEnergy = 5000,
+            BuildCostMass = 300,
+            BuildTime = 1500,	
+		},
+	    Shield = {
+            BuildCostEnergy = 187500,
+            BuildCostMass = 3000,
+            BuildTime = 15000,	
+		},
+	    ShieldHeavy = {
+            BuildCostEnergy = 270000,
+            BuildCostMass = 4500,
+            BuildTime = 18000,
+            ShieldEnergyDrainRechargeTime = 5,
+            ShieldMaxHealth = 35000,
+            ShieldRechargeTime = 180,
+            ShieldRegenRate = 120,
+            ShieldRegenStartTime = 1,
+        },		
+	    StabilitySuppressant = {
+            BuildCostEnergy = 187500,
+            BuildCostMass = 2000,
+            BuildTime = 15000,
+            NewDamageRadiusMod = 4,
+        },		
+		SystemIntegrityCompensator = {
+            BuildCostEnergy = 180000,
+            BuildCostMass = 3600,
+            BuildTime = 18000,
+        },	
+		Teleporter = {
+            BuildCostEnergy = 1500000,
+            BuildCostMass = 15000,
+            BuildTime = 18000,
+        },
+		}
+}

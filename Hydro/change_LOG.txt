@@ -1,0 +1,5 @@
+By: Etherr
+
+Deleted hook\lua
+
+PS this code is already present in FAF.

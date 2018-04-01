@@ -1,0 +1,6 @@
+Converted by: Etherr
+Bugfix : Uveso
+
+All units of total mayhem converted for FAF use only.
+No backward compatibility. 
+All units balanced the way imperator sees it.

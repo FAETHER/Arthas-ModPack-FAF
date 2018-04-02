@@ -507,7 +507,7 @@ function AdvancedJammerHologram(SuperClass)
     end, 
 
     OnCollisionCheck = function(self, other, firingWeapon) 
-        if not self.Parent:IsDead() then 
+        if not self.Parent.Dead then 
             self:Destroy()      
         end 
     end,          
@@ -516,7 +516,7 @@ function AdvancedJammerHologram(SuperClass)
         ### Clears the current hologram commands if any
         IssueClearCommands(self)       
         ### Clears the offending hologram from the parents table
-        if not self.Parent:IsDead() and self.Parent:GetJammingStatus() then
+        if not self.Parent.Dead and self.Parent:GetJammingStatus() then
             table.removeByValue(self.Parent.HologramTable, self)
             local hologram = self:GetUnitId() 
             self.Parent:ReplaceHologram(hologram)

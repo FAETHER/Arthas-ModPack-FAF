@@ -3,19 +3,19 @@ UnitList = {
 		Seraphim = {'wsl0205', 50},
 	},
 	T2AttackTankSorian = {
-		Seraphim = {'wsl0205', 50},
+--		Seraphim = {'wsl0205', 50},
 	},
 	T3LandAA = {
-      UEF = {'wel0309', 100},
+--      UEF = {'wel0309', 100},
       Cybran = {'wrl0309', 100},
    },
     T3ArmoredAssault = {
-    	Aeon = {'wal0305', 100},
+--    	Aeon = {'wal0305', 100},
     	Seraphim = {'wsl0308', 100},
     },
     T3LandBot = {
-    	Aeon = {'wal0305', 50},
-    	Seraphim = {'wsl0302', 50},
+--    	Aeon = {'wal0305', 50},
+--    	Seraphim = {'wsl0302', 50},
     },
     T3ArmoredAssaultSorian = {
     	Aeon = {'wal0305', 100},

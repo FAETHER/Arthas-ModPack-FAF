@@ -16,10 +16,11 @@ UnitList = {
 		UEF = {'bel0211', 50},
 	},
 	T3LandAA = {
-      UEF = {'belk002', 100},
-      Cybran = {'brlk001', 100},
-      Aeon = {'balk003', 100},
-      Seraphim = {'bslk004', 100},
+-- added by faf...	
+--      UEF = {'belk002', 100},
+--      Cybran = {'brlk001', 100},
+--      Aeon = {'balk003', 100},
+--      Seraphim = {'bslk004', 100},
    },
     T3LandArtillery = {
     	UEF = {'bel0308', 70,},

@@ -207,7 +207,7 @@ UnitBlueprint {
             NukeOuterRingRadius = 55,
             NukeOuterRingTicks = 1,
             NukeOuterRingTotalTime = 5,
-            ProjectileId = '/mods/BlackOpsEXUnits/effects/Entities/EXNovaBombEffectController01/EXNovaBombEffectController01_proj.bp',
+            ProjectileId = '/mods/BlackOpsFAF-EXUnits/effects/Entities/EXNovaBombEffectController01/EXNovaBombEffectController01_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {

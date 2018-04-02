@@ -109,13 +109,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/BlackOpsEXUnits/units/ees0301/ees0301_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/ees0301/ees0301_ADeath01.sca',
                 AnimationRateMax = 2.0,
                 AnimationRateMin = 0.75,
                 Weight = 100,
             },
         },
-        AnimationSurface = '/mods/BlackOpsEXUnits/units/ees0301/ees0301_aopen.sca',
+        AnimationSurface = '/mods/BlackOpsFAF-EXUnits/units/ees0301/ees0301_aopen.sca',
         IdleEffects = {
             Sub = {
                 Effects = {
@@ -344,7 +344,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 15,
 			NotExclusive = true,
-            ProjectileId = '/mods/BlackopsEXUnits/projectiles/UEFClusterCruise01/UEFClusterCruise01_proj.bp',
+            ProjectileId = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFClusterCruise01/UEFClusterCruise01_proj.bp',
             ProjectileLifetime = 50,
             RackBones = {
                 {
@@ -442,7 +442,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.8,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 5,
-            ProjectileId = '/mods/Blackopsexunits/projectiles/UEFConcussionTorpedo01/UEFConcussionTorpedo01_proj.bp',
+            ProjectileId = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFConcussionTorpedo01/UEFConcussionTorpedo01_proj.bp',
             ProjectileLifetime = 7,
             ProjectilesPerOnFire = 1,
             NukeInnerRingDamage = 400,
@@ -615,7 +615,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 15,
             MuzzleVelocity = 32,
 			NotExclusive = true,
-            ProjectileId = '/mods/blackopsexunits/projectiles/UEFSubGatling01/UEFSubGatling01_proj.bp',
+            ProjectileId = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFSubGatling01/UEFSubGatling01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -701,7 +701,7 @@ UnitBlueprint {
             NukeOuterRingTicks = 1,
             NukeOuterRingTotalTime = 0,
             NukeWeapon = false,
-            ProjectileId = '/mods/Blackopsexunits/projectiles/UEFTacNuke01/UEFTacNuke01_proj.bp',
+            ProjectileId = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFTacNuke01/UEFTacNuke01_proj.bp',
             ProjectileLifetime = 80,
             RackBones = {
                 {

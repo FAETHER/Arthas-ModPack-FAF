@@ -5,7 +5,7 @@ copyright = "Lt_hawkeye"
 description = "Version 6.0. BlackOps Unleased Unitpack contains several new units and game changes. Have fun"
 author = "Lt_hawkeye"
 url = "http://forums.gaspowered.com/viewtopic.php?t=31172"
-icon = "/mods/BlackOpsUnleashed/icons/yoda_icon.bmp"
+icon = "/mods/BlackOpsFAF-Unleashed/icons/yoda_icon.bmp"
 selectable = true
 enabled = true
 exclusive = false

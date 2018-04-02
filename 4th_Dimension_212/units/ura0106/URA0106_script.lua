@@ -96,8 +96,7 @@ URA0106 = Class(CAirUnit) {
         if not self:IsDead() and not self.Parent:IsDead() then
         
             ### Updates the drone veterancy to match that of the carrier upon launch
-            local carrierKills = self.Parent:GetStat('KILLS', 0).Value
-            self.AddKills(self, carrierKills)            
+            local carrierKills = self.Parent:GetStat('KILLS', 0).Value + 1           
                
             ### Set flag to true 
             self.BurnerActive = true
@@ -208,7 +207,7 @@ URA0106 = Class(CAirUnit) {
     end, 
     
     ReceiveKills = function(self, unitKills)
-        self.AddKills(self, unitKills)   
+        local unitKills = self:GetStat('KILLS', 0).Value +1   
     end,       
     
     UpdateCarrierKills = function(self)

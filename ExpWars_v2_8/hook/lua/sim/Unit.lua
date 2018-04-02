@@ -927,7 +927,8 @@ ExpWars_Unit = Class(moho.unit_methods) {
             end
 
             local newUnit = newUnits[1]
-
+			local entId = self:GetEntityId()
+            local unitEnh = SimUnitEnhancements[entId]
 			if unitEnh then
                 for k,v in unitEnh do
                     newUnit:CreateEnhancement(v)

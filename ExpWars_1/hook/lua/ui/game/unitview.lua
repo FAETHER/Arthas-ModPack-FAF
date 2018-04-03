@@ -5,7 +5,7 @@ if version < 3652 then -- All versions below 3652 don't have buildin global icon
 
 local MyUnitIdTable = {
    url0405=true, -- Monkeylord - (Experimental Spiderbot)
-   ual0405=true, -- Galactic Colossus - (Experimental Assault Bot)
+   ual0401=true, -- Galactic Colossus - (Experimental Assault Bot)
    ueb4205=true, -- Light Parashield - (Light Shield Generator)
    xsse0001=true, -- The Tlacuconos - (Experimental Tech1 Spaceship)
    urb5001=true, -- Eclispe - (Heavy Stealth Field Generator)

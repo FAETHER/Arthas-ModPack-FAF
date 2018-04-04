@@ -7,7 +7,7 @@ UnitList = {
 	},
 	T3LandAA = {
 --      UEF = {'wel0309', 100},
-      Cybran = {'wrl0309', 100},
+--      Cybran = {'wrl0309', 100},
    },
     T3ArmoredAssault = {
 --    	Aeon = {'wal0305', 100},
@@ -18,7 +18,7 @@ UnitList = {
 --    	Seraphim = {'wsl0302', 50},
     },
     T3ArmoredAssaultSorian = {
-    	Aeon = {'wal0305', 100},
+ --   	Aeon = {'wal0305', 100},
     	Seraphim = {'wsl0308', 100},
     },
     T4LandExperimental1 = {

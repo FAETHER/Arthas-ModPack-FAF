@@ -3694,7 +3694,7 @@ ExpWars_Unit = Class(moho.unit_methods) {
     PlayUnitSound = function(self, sound)
         local bp = self:GetBlueprint()
         if not bp.Audio[sound] then return end
-
+		if self.Dead then return else end
         local entity = self:GetSoundEntity('UnitSound')
         entity:PlaySound(bp.Audio[sound])
 
@@ -5294,7 +5294,9 @@ CBFP_Unit = Class( CBFP_oldUnit ) {
     ##########################################################################################
     ## TRANSPORTING
     ##########################################################################################
-
+	
+	--redundant, defined in defaultunits.lua
+	
     OnTransportAttach = function(self, attachBone, unit)
         CBFP_oldUnit.OnTransportAttach(self, attachBone, unit)
         --# added by brute51

@@ -542,7 +542,7 @@ StructureUnit = Class(Unit) {
             WARN("Precondition Failed: No AdjacentUnits registered for entity: " .. repr(self.GetEntityId))
             return
         end
-
+				
         local adjBuffs = self:GetBlueprint().Adjacency
 
         if adjBuffs and AdjacencyBuffs[adjBuffs] then

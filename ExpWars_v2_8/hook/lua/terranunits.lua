@@ -597,15 +597,15 @@ TPodTowerUnit = Class(TStructureUnit) {
         self.PodData[podName].Active = true
     end,
     
-    OnTransportAttach = function(self, bone, attachee)
-        attachee:SetDoNotTarget(true)
-        TStructureUnit.OnTransportAttach(self, bone, attachee)
-    end,
+    -- OnTransportAttach = function(self, bone, attachee)
+        -- attachee:SetDoNotTarget(true)
+        -- TStructureUnit.OnTransportAttach(self, bone, attachee)
+    -- end,
     
-    OnTransportDetach = function(self, bone, attachee)
-        attachee:SetDoNotTarget(false)
-        TStructureUnit.OnTransportDetach(self, bone, attachee)
-    end,
+    -- OnTransportDetach = function(self, bone, attachee)
+        -- attachee:SetDoNotTarget(false)
+        -- TStructureUnit.OnTransportDetach(self, bone, attachee)
+    -- end,
     
     FinishedBeingBuilt = State {
         Main = function(self)

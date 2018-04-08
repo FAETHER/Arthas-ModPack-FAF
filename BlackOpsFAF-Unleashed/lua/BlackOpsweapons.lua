@@ -980,7 +980,7 @@ CitadelHVMWeapon = Class(DefaultProjectileWeapon) {
 							#LOG('Setting Target to ' .. self.TargetTable[n])
 							if not tar:BeenDestroyed() and not tar:IsDead() then
 								self:SetTargetEntity(tar)
-								--CreateAttachedEmitter(tar, 0, tar:GetArmy(), '/mods/BlackOpsUnleashed/effects/emitters/targeted_effect_01_emit.bp'):OffsetEmitter(0, 0.5,0) 
+								--CreateAttachedEmitter(tar, 0, tar:GetArmy(), '/mods/BlackOpsFAF-Unleashed/effects/emitters/targeted_effect_01_emit.bp'):OffsetEmitter(0, 0.5,0) 
 								#LOG('emit')
 							end
 						else 
@@ -989,7 +989,7 @@ CitadelHVMWeapon = Class(DefaultProjectileWeapon) {
 							if not tar:BeenDestroyed() and not tar:IsDead() then
 								self:SetTargetEntity(tar)
 								if tar.Pointed ~= true then
-									--CreateAttachedEmitter(tar, 0, tar:GetArmy(), '/mods/BlackOpsUnleashed/effects/emitters/targeted_effect_01_emit.bp'):OffsetEmitter(0, 0.5,0) 
+									--CreateAttachedEmitter(tar, 0, tar:GetArmy(), '/mods/BlackOpsFAF-Unleashed/effects/emitters/targeted_effect_01_emit.bp'):OffsetEmitter(0, 0.5,0) 
 									#LOG('emit')
 									tar.Pointed = true
 									tar:ForkThread(self.PointedThread, self)

@@ -10,16 +10,16 @@
 
 local CSeaUnit = import('/lua/cybranunits.lua').CSeaUnit
 local CybranWeaponsFile = import('/lua/cybranweapons.lua')
-local WeaponsFile = import('/mods/BlackOpsEXUnits/lua/EXBlackOpsweapons.lua')
+local WeaponsFile = import('/mods/BlackOpsFAF-EXUnits/lua/EXBlackOpsweapons.lua')
 local CAAAutocannon = CybranWeaponsFile.CAAAutocannon
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
 local CANNaniteTorpedoWeapon = import('/lua/cybranweapons.lua').CANNaniteTorpedoWeapon
 local CIFSmartCharge = import('/lua/cybranweapons.lua').CIFSmartCharge
 local CybranAriesBeam = WeaponsFile.CybranAriesBeam
 local CAANanoDartWeapon = import('/lua/cybranweapons.lua').CAANanoDartWeapon
-local HailfireLauncherWeapon = import('/mods/BlackOpsEXUnits/lua/EXBlackOpsweapons.lua').HailfireLauncherWeapon
+local HailfireLauncherWeapon = import('/mods/BlackOpsFAF-EXUnits/lua/EXBlackOpsweapons.lua').HailfireLauncherWeapon
 local CAMZapperWeapon02 = CybranWeaponsFile.CAMZapperWeapon02
-local EXEffectTemplate = import('/mods/BlackOpsEXUnits/lua/EXBlackOpsEffectTemplates.lua')
+local EXEffectTemplate = import('/mods/BlackOpsFAF-EXUnits/lua/EXBlackOpsEffectTemplates.lua')
 
 ERS0302 = Class(CSeaUnit) {
     DestructionTicks = 200,

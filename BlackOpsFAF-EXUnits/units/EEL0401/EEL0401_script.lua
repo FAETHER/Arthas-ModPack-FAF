@@ -7,7 +7,7 @@
 #****************************************************************************
 
 local TMobileFactoryUnit = import('/lua/terranunits.lua').TMobileFactoryUnit
-local WeaponsFile = import('/mods/BlackOpsEXUnits/lua/EXBlackOpsweapons.lua')
+local WeaponsFile = import('/mods/BlackOpsFAF-EXUnits/lua/EXBlackOpsweapons.lua')
 local SonicDisruptorWave = WeaponsFile.SonicDisruptorWave
 local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
 
@@ -25,27 +25,27 @@ EEL0401 = Class(TMobileFactoryUnit) {
 					end
 					self.Chargeupeffects = {}
 				end
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_01_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_01_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_04_emit.bp' ):ScaleEmitter(0.25) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_04_emit.bp' ):ScaleEmitter(0.25) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_hit_01_emit.bp' ):ScaleEmitter(0.25) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_hit_01_emit.bp' ):ScaleEmitter(0.25) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_03', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_04', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_05', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_06', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_07', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_08', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_09', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_10', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_11', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_12', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_13', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_14', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
-				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_15', self.unit:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_01_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_01_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_04_emit.bp' ):ScaleEmitter(0.25) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_04_emit.bp' ):ScaleEmitter(0.25) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_hit_01_emit.bp' ):ScaleEmitter(0.25) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Emitter_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_hit_01_emit.bp' ):ScaleEmitter(0.25) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_01', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_02', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_03', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_04', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_05', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_06', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_07', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_08', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_09', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_10', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_11', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_12', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_13', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_14', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
+				table.insert( self.Chargeupeffects, CreateAttachedEmitter( self.unit, 'Wave_Muzzle_15', self.unit:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exsonicdisruptor_muzzle_03_emit.bp' ):ScaleEmitter(0.5) )
 
                 SonicDisruptorWave.PlayFxRackSalvoChargeSequence(self)
             end,

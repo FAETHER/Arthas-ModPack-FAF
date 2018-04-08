@@ -8,7 +8,7 @@
 #**  Copyright © 2007 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local CWalkingLandUnit = import('/lua/cybranunits.lua').CWalkingLandUnit
-local CybranWeaponsFile = import('/mods/BlackOpsEXUnits/lua/EXBlackOpsweapons.lua')
+local CybranWeaponsFile = import('/mods/BlackOpsFAF-EXUnits/lua/EXBlackOpsweapons.lua')
 local CybranShadowSplitterBeam = CybranWeaponsFile.CybranShadowSplitterBeam
 local EffectUtil = import('/lua/EffectUtilities.lua')
 

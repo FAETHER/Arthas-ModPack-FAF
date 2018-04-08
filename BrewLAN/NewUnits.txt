@@ -1,3 +1,9 @@
+T3AirTransport = {
+    Aeon = {'saa0306', 100},
+    Cyrban = {'sra0306', 100},
+    Seraphim = {'ssa0306', 100},
+},
+
 sal0311
 sal0320
 sel0320

@@ -8,14 +8,15 @@
 #**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local SStructureUnit = import('/lua/seraphimunits.lua').SStructureUnit
-local SeraLambdaField = import('/mods/BlackOpsACUs/lua/BlackOpsdefaultantiprojectile.lua').SeraLambdaFieldRedirector
+local SeraLambdaField = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsdefaultantiprojectile.lua').SeraLambdaFieldDestroyer
 local TerranWeaponFile = import('/lua/terranweapons.lua')
-local TIFCommanderDeathWeapon = TerranWeaponFile.TIFCommanderDeathWeapon
+local DeathNukeWeapon = import('/lua/sim/defaultweapons.lua').DeathNukeWeapon
+
 
 EEB0001 = Class(SStructureUnit) {
 
     Weapons = {
-        DeathWeapon = Class(TIFCommanderDeathWeapon) {},
+        DeathWeapon = Class(DeathNukeWeapon) {},
     },
 	
     Parent = nil,
@@ -28,19 +29,18 @@ EEB0001 = Class(SStructureUnit) {
 	OnCreate = function(self, builder, layer)
         SStructureUnit.OnCreate(self, builder, layer)
 		self:ForkThread(self.CoreEffectsCreation)
-        self.UnitComplete = true
+		self.UnitComplete = true
 	end,
 
 	CoreEffectsCreation = function(self)
-        self.Effect1 = CreateAttachedEmitter(self,0,self:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exstar_01_emit.bp')
+        self.Effect1 = CreateAttachedEmitter(self,0,self:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exstar_01_emit.bp')
         self.Effect1:ScaleEmitter(0.15)
 		WaitSeconds(2)
-        self.Effect2 = CreateAttachedEmitter(self,0,self:GetArmy(), '/mods/BlackOpsEXUnits/effects/emitters/exstar_02_emit.bp')
+        self.Effect2 = CreateAttachedEmitter(self,0,self:GetArmy(), '/mods/BlackOpsFAF-EXUnits/effects/emitters/exstar_02_emit.bp')
         self.Effect2:ScaleEmitter(3.6)
 	end,
 	
     OnKilled = function(self, instigator, type, overkillRatio)
-
         ### Notifies parent of drone death and clears the offending drone from the parents table
         if not self.Parent:IsDead() then
             self.Parent:NotifyOfDroneDeath(self.Drone)

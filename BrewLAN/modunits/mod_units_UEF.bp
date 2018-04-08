@@ -1,0 +1,53 @@
+#UEF Buildings	----------------------------------#
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb4301",		##HSD - Pulse     
+    Display = {
+        Tarmacs = {
+            {
+                Albedo = '/env/Common/decals/Tarmacs/Tar8x_01_albedo.dds',
+                Normal = '/env/Common/decals/Tarmacs/Tar8x_01_normals.dds',
+                Length = 12.8,
+                Width = 12.8,
+            },
+        },
+    },    
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb4202",		##SD - Pulse          
+    Display = {
+        Tarmacs = {
+            {
+                Albedo = '/env/Common/decals/Tarmacs/Tar8x_01_albedo.dds',
+                Normal = '/env/Common/decals/Tarmacs/Tar8x_01_normals.dds',
+                Length = 12.8,
+                Width = 12.8,
+            },
+        },
+    },  
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb4302",		##UEF antinuke
+    Display = {
+        Tarmacs = {
+            {
+                Albedo = '/mods/BrewLAN/env/Common/decals/Tarmacs/Tar7x_01_albedo.dds',
+                Normal = '/mods/BrewLAN/env/Common/decals/Tarmacs/Tar7x_01_normals.dds',
+            },
+        },
+    },
+}
+#UEF Units	----------------------------------#
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uel0101",		##snoop
+    Intel = {
+        OmniRadius = 2,			##Added
+    },
+}

@@ -1,4 +1,5 @@
 UnitBlueprint {
+	merge = true,
     AI = {
         GuardReturnRadius = 125,
         GuardScanRadius = 100,
@@ -182,11 +183,6 @@ UnitBlueprint {
         SpawnRandomRotation = true,
         UniformScale = 0.2,
     },
-    Economy = {
-        BuildCostEnergy = 40000,
-        BuildCostMass = 350,
-        BuildTime = 3000,
-    },
     Footprint = {
         MaxSlope = 0.25,
         SizeX = 1,
@@ -263,6 +259,11 @@ UnitBlueprint {
         Level3 = 36,
         Level4 = 48,
         Level5 = 60,
+    },
+	Economy = {
+        BuildCostEnergy = 160000,
+        BuildCostMass = 1600,
+        BuildTime = 12000,
     },
     Weapon = {
         {

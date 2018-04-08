@@ -56,7 +56,7 @@ T4AirExperimental1 = {UEF = {'sea0401', 1},},
 -- T3 Aircraft
 --------------------------------------------------------------------------------
 T3AirTransport = {
---    Aeon = {'saa0306', 100},
+    Aeon = {'saa0306', 100},
     Cyrban = {'sra0306', 100},
     Seraphim = {'ssa0306', 100},
 },

@@ -7,7 +7,7 @@ UnitList = {
 		Cybran = {'wra0303', 50},
 	},
 	T2FighterBomber = {
-		Cybran = {'wra0202', 60},
+--		Cybran = {'wra0202', 60},
 	},
 	T4AirExperimental1 = {
         Cybran = {'wra0401', 50},
